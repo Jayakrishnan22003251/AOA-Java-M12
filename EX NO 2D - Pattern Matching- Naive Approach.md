@@ -1,6 +1,6 @@
 
 # EX 2D Pattern Matching using Naive Approach.
-## DATE:
+## DATE: 07/09/2025
 ## AIM:
 To write a Java program to for given constraints.
 Given text string with length n and a pattern with length m, the task is to prints all occurrences of pattern in text.
@@ -14,22 +14,29 @@ Output: Pattern found at index 10
 Input:  text =  "AABAACAADAABAABA", pattern = "AABA"
 Output: Pattern found at index 0, Pattern found at index 9, Pattern found at index 12
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+ 1. Start
+ 2. Read the input string text and the pattern to be searched.
+ 3. Find the lengths of both strings:
+     n = length of text
+     m = length of pattern
+ 4. Loop through the text from index i = 0 to i <= n - m:
+      For each position i, compare every character of the pattern with the corresponding character in the text.
+      If any character does not match, break out of the inner loop.
+ 5. If all characters of the pattern match (j == m), print the index i where the pattern starts in the text.
+6. Continue checking until the end of the text.
+7. End 
 
 ## Program:
 ```
 /*
-Program to implement Reverse a String
-Developed by: 
-Register Number:  
+Program to implement Pattern Matching using Naive Approach
+Developed by: JAYAKRISHNAN L B L
+Register Number:  212222230052 
 */
 ```
 
 ## Output:
+<img width="802" height="217" alt="image" src="https://github.com/user-attachments/assets/7c018d34-e18d-459b-a44d-e6e537cd76ba" />
 
 
 
