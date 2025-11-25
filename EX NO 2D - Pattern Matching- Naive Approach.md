@@ -33,7 +33,45 @@ Program to implement Pattern Matching using Naive Approach
 Developed by: JAYAKRISHNAN L B L
 Register Number:  212222230052 
 */
+
+import java.util.Scanner;
+
+public class NaivePatternSearch {
+
+    public static void search(String text, String pattern) {
+        int n = text.length();
+        int m = pattern.length();
+
+        for (int i = 0; i <= n - m; i++) {
+            int j;
+            for (j = 0; j < m; j++) {
+                if (text.charAt(i + j) != pattern.charAt(j)) {
+                    break;
+                }
+            }
+            if (j == m) {
+                System.out.println("Pattern found at index " + i);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //System.out.print("Enter the text: ");
+        String text = scanner.nextLine();
+
+        //System.out.print("Enter the pattern: ");
+        String pattern = scanner.nextLine();
+
+        search(text, pattern);
+
+        scanner.close();
+    }
+}
+
 ```
+
 
 ## Output:
 <img width="802" height="217" alt="image" src="https://github.com/user-attachments/assets/7c018d34-e18d-459b-a44d-e6e537cd76ba" />
